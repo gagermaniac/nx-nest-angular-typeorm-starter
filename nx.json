@@ -1,5 +1,5 @@
 {
-  "npmScope": "spp",
+  "npmScope": "app",
   "affected": {
     "defaultBase": "master"
   },
@@ -19,12 +19,10 @@
     }
   },
   "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
+    "build": [{
+      "target": "build",
+      "projects": "dependencies"
+    }]
   },
   "projects": {
     "api": {
@@ -33,12 +31,12 @@
     "api-interfaces": {
       "tags": []
     },
-    "spp": {
+    "app": {
       "tags": []
     },
-    "spp-e2e": {
+    "app-e2e": {
       "tags": [],
-      "implicitDependencies": ["spp"]
+      "implicitDependencies": ["app"]
     }
   }
 }
