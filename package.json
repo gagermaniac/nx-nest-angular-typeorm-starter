@@ -25,7 +25,14 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "migration:generate": "ts-node --project tsconfig.base.json node_modules/.bin/typeorm migration:generate -f ormconfig.seed.js -n",
+    "migration:run": "ts-node --project tsconfig.base.json node_modules/.bin/typeorm migration:run",
+    "migration:revert": "ts-node --project tsconfig.base.json node_modules/.bin/typeorm migration:revert",
+    "schema:drop": "ts-node --project tsconfig.base.json ./node_modules/typeorm/cli.js schema:drop",
+    "schema:sync": "ts-node --project tsconfig.base.json ./node_modules/typeorm/cli.js schema:sync",
+    "seed:config": "ts-node --project tsconfig.base.json ./node_modules/typeorm-seeding/dist/cli.js config -n ./ormconfig.seed.js",
+    "seed:run": "ts-node --project tsconfig.base.json ./node_modules/typeorm-seeding/dist/cli.js seed -n ./ormconfig.seed.js"
   },
   "private": true,
   "dependencies": {
