@@ -69,6 +69,7 @@
     "ts-md5": "^1.2.9",
     "tslib": "^2.0.0",
     "typeorm": "^0.2.37",
+    "typeorm-seeding": "^1.6.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
